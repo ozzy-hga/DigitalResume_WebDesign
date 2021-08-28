@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Osvaldo Museta Resume</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/stylesheetWebDesign.css">
+        <link rel="stylesheet" type="text/css" href="css/animationIcons.css">
+    </head>
+
+    <body>
+        <!--Jumbotron that Links to my Header-->
+        <div class="jumbotron text-center container-fluid">
+            <h1 class="display-4">Welcome to My Online Resume</h1>
+            <p class="lead">Here, you will find my CV as well as up-to-date information on my Web Development Skills & Projects</p>
+            <hr class="my-4">
+            <p>Jump right in and have a look at what I have on offer.</p>
+            <a class="btn btn-primary btn-lg" href="#jumbotronRef" role="button">Get Started</a>
+        </div>
+
+        <!--Carousel That Shows Testimonials-->
+        <div id="carouselTestimonialSlides" class="carousel slide text-center " data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselTestimonialSlides" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselTestimonialSlides" data-slide-to="1"></li>
+                    <li data-target="#carouselTestimonialSlides" data-slide-to="2"></li>
+                </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-90" src="/images/ScreenshotT2020-12-22 002948.jpg" alt="Title slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-90" src="/images/Screenshot 2020-12-22 002948.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-90" src="/images/Screenshot 2020-12-22 003225.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-90" src="images/Screenshot 2020-12-22 003258.png" alt="Third slide">
+                </div>
+            </div>
+            <!--Carousel Prev/Next-->
+            <a class="carousel-control-prev text-dark" href="#carouselTestimonialSlides" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselTestimonialSlides" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <header class="text-center" id="jumbotronRef">
+            <!--Profile Picture-->
+            <picture>
+                <source media="(max-width:650px)" srcset="images/omResumePic650px.jpg">
+                <source media="(max-width:1400px)" srcset="images/omResumePic1400px.jpg">
+                <img class="myImage" src="images/omResumePic.jpg" alt="Osvaldo Museta Picture" width="250" height="250" class="img-fluid">
+            </picture>
+            <h1 class="display-1">Osvaldo Museta</h1>
+            <p><b>Creative Thinker | Junior Developer | Digital-Enthusiast</b></p>
+
+            <!--Adding my Say Hello Button & Form to Header-->
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Say Hello
+            </a>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body text-dark">
+                    <section class="mb-4">
+                        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
+                        <p class="text-center w-responsive mx-auto mb-5">If you have any questions feel free to contact me below:</p>
+                    
+                        <div class="row">
+                            <div class="col-md-12 mb-md-0 mb-5">
+                                <!--The FORM-->
+                                <form id="contact-form" name="contact-form" action="contact.text" method="POST">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="md-form mb-0">
+                                                <input type="text" id="name" name="name" class="form-control">
+                                                <label for="name" class="">Your Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="md-form mb-0">
+                                                <input type="text" id="email" name="email" class="form-control">
+                                                <label for="email" class="">Your Email</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="md-form mb-0">
+                                                <input type="text" id="subject" name="subject" class="form-control">
+                                                <label for="subject" class="">Subject</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="md-form">
+                                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                                <label for="message">Your Message</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                    
+                                <div class="text-center text-md-left">
+                                    <a class="btn btn-primary">Send</a>
+                                </div>
+                            </div>
+                    </section>
+                </div>
+            </div>
+            <!--End of Say Hello Button & Form-->
+        </header>
+        
+        <section class="container-fluid">
+        <div class="row">
+
+            <aside class="col-3 mx-sm-0">
+                <h2 class="text-muted, display-4" >Menu</h2>
+                <p>
+                    <ul class="sideMenu, list-unstyled">
+                        <li><a href="#Education">Education</a></li>
+                        <li><a href="#Experience">Experience</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </p>
+            </aside>
+
+            <article class="col-9 mx-sm-0">
+                <h2 class="display-4" id="Education">Education</h2>
+                    <h3>Intro to Web at <a href="http://codespace.co.za/" target="_blank">CodeSpace Academy.</a></h3>
+                        <p>Learnt two coding languages: HTML and CSS as the foundation of creating websites. 
+                            I used HTML and CSS to code a digital resumé. This online CV presents my skills and experience in an impressive way whilst adding portfolio pieces.
+                            Coding a website is was a great place to start my coding journey. 
+                        </p>
+                        <p>This course is the foundation for all further web development. 
+                            Once I have mastered this course I will be able to keep learning how to create more complex web products and mobile applications. 
+                        </p>
+
+                    <h3>The Complete SQL Bootcamp 2021 on <a href="https://www.udemy.com/certificate/UC-dd2c67f1-7628-4904-86c0-c38511fd0b3b/" target="_blank">Udemy</a></h3>
+                        <p>Learnt how to read and write complex queries to a database using one of the most in demand skills - PostgreSQL. 
+                            These skills are also applicable to any other major SQL database, such as MySQL, Microsoft SQL Server, Amazon Redshift, Oracle, and more.
+                            Course was instructed by Jose Portilla, Head of Data Science, Pierian Data Inc
+                        </p>
+
+                    <h3>Technical Support Fundamentals on <a href="https://www.linkedin.com/in/osvaldomuseta/detail/treasury/education:685912118/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAACLQNH8BdY7aHpUVJscD57WNmOmqsvFHJGs%2C1604016437421)&section=education%3A685912118&treasuryCount=1&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BGE3%2BpNrqRvGuKqFrdbLJpQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-treasury_thumbnail_cell" target="_blank">Coursera</a></h3>
+                        <p>After completing this course facilitated by Google, I was able to utilize common problem-solving methodologies and soft skills in an Information Technology setting, with knowledge on Windows Powershell and Linux Terminal.
+                            In addition, I learnt about the different facets of Information Technology, like computer hardware, the Internet, computer software, troubleshooting, and customer service.
+                        </p>
+                    
+                <h2 class="display-4" id="Experience">Experience</h2>
+                    <h3>Digital Marketing & Solutions Specialist | Eco Signage Supplies</h3>
+                        <p> <u>Key Deliverables:</u> 
+                            <ul>
+                                <li>Web Development for the company's e-commerce website using WordPress and Adobe Suite of products to design fresh brand assets that give it a more modern look across all digital platforms. Used my HTML & CSS skills to troubleshoot errors.</li>
+                                <li>Managing and overseeing various digital marketing channels like Facebook, LinkedIn, Twitter, and Instagram; designing relevant social media campaigns.</li>
+                                <li>Coming up with digital solutions for managing and organizing workflow within our small team i.e. introduced Trello Boards to allocate daily tasks and keep each other updated on our progress.</li>
+                                <li>Strategizing and driving the implementation of the digitization of the store utilizing digital platforms available for marketing and sales to increase Customer ROI.</li>
+                                <li>Working effectively with the sales team and company employees to better understand the dynamics of the business and how we can translate and articulate it to the online platforms.</li>
+                                <li>Ensuring quality control on all Products and their respective categories as we loaded them onto the website with a standard format to maintain consistency.</li>
+                                <li>Building and revamping the company's e-commerce website using WordPress and Adobe Suite of products to design fresh brand assets that give it a more modern look across all digital platforms.</li>
+                            </ul>
+                        </p>
+
+                    <h3>Technical & Design Consultant | Helplink Africa</h3>
+                        <p> <u>Key Deliverables:</u>
+                            <ul>
+                                <li>Assisted the growing startup to establish technologies that best suit the business model as well as setting up and designing assets for the vCita CRM & Business Management Platform on which the current business model is based on. </li>
+                                <li>Designed the branding kit, presentations and social media posts that suited the Company's aesthetics whilst also establishing Identity Guidelines. </li>
+                                <li>Successfully worked on the Bantu Stall online platform, designing the website using WordPress tools and closely monitoring Social Media Analytics. </li>
+                            </ul>
+                        </p>
+                    
+                    <h3>CATI Intern | MRM Support</h3>
+                        <p> <u>Key Deliverables:</u>
+                            <ul>
+                                <li>Delivered exceptional research services by conducting Telephonic Interviews to harvest Customer Service Data on behalf of the third party clients that included Avis, Altech Netstar and VOX Fibre.</li>
+                            </ul>
+                        </p>
+
+                <h2 class="display-4" id="Skills">Skills</h2>
+                        <ol>
+                            <li> <img src="images/html5.png" alt="HTML5 Logo" width="5%" height="5%"> HTML5</li>
+                            <li> <img src="images/css.png" alt="CSS Logo" width="3.5%" height="4%"> CSS </li>
+                            <li> <img src="images/sqldb.png" alt="SQL Logo" width="5%" height="5%"> T-SQL & PostgreSQL</li>
+                            <li> <img src="images/python.png" alt="Python Logo" width="3.7%" height="4%"> Python</li>
+                        </ol>
+                       
+            </article>
+        </div>
+        </section>
+
+        <footer class="container-fluid">
+       
+            <h2 class="display-4" id="Contact">Contact Details</h2>
+                <p class="icons">
+                    <a href="https://www.linkedin.com/in/osvaldomuseta/" target="_blank"><img class="animatedIcon" src="images/Icons/010-linkedin.svg" width="50px" height="50px" class="img-fluid"></a>
+                    <a href="mailto:musetase@gmail.com" target="_blank">    <img class="animatedIcon" src="images/icons/gmail.svg" alt="Gmail Email Icon" width="50px" height="50px" class="img-fluid"></a>
+                    <a href="https://github.com/ozzy-hga/" target="_blank"> <img class="animatedIcon" src="images/icons/github.svg" alt="Github Icon" width="50px" height="50px" class="img-fluid"></a>
+                    <a href="https://osvaldomuseta.wordpress.com/" target="_blank"> <img class="animatedIcon" src="images/icons/005-wordpress.svg" alt="WordPress Icon" width="50px" height="50px" class="img-fluid"></a>
+                    <a href="https://wa.me/27626271369" target="_blank"><img class="animatedIcon" src="images/icons/whatsapp.svg" alt="Whatsapp Icon" width="50px" height="50px" class="img-fluid"></a>
+                </p>
+        </footer>
+
+    </body>
+
+</html>

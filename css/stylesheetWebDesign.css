@@ -1,0 +1,69 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategrey;
+    max-width: 1600;
+}
+
+header{
+    background-color: hsl(131, 26%, 79%);
+    background-image:url(/images/bgHeaderImage.png);
+    background-position:center;
+    font-size: medium;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 13px;
+    color: whitesmoke;
+}
+
+.myImage{
+    border-color: #788BFF;
+    border-width: 3.0px;
+    border-style: solid;
+    border-radius: 250px 250px 250px 250px;
+}
+
+
+
+.sideMenu{
+    display: block;
+    padding: 0px;
+}
+
+article{
+    background-image: url(/images/email-pattern.png);
+    background-repeat: repeat;
+}
+
+footer{
+    background-color: #BCD8C1;
+    text-align: center;
+    height: 150px;
+    justify-content: center;
+    display: block;
+    padding-top: 16px;
+}
+
+.icons{
+    display: inline;
+    justify-content:center;
+}
+
+@media screen and (max-width: 600px) {
+    aside {background-color: #e978da;}
+    article {background-repeat: repeat-y;}
+    header {background-image: unset;}
+}
+
+@media screen and (min-width: 768px) {
+    aside {background-color: #75e766;}
+    article {background-repeat: repeat;}
+}
+ 
+@media screen and (min-width: 1200px) {
+    aside {background-color:#E9D985;}
+    article {background-repeat: repeat;}
+}
+
+div.carouselTestimonialSlides {
+    text-align: center;
+}

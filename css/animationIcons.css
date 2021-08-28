@@ -1,0 +1,15 @@
+@keyframes animatedIcons {
+    0%      {transform: scale(1.5);}
+    25%     {transform: scale(2);}
+    50%     {transform: scale(1.5);}
+    100%    {transform: scale(1.5);}
+}
+
+.animatedIcon:hover {
+    animation-name: animatedIcons;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-direction:normal;
+    animation-delay:0s;
+    animation-timing-function: ease-in-out;
+}
